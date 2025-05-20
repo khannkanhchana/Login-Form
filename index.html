@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: whitesmoke;
+      display: flex;
+      justify-content: center;
+      /* align-items: center; */
+      /* height: 100vh; */
+      margin: 0;
+      font-size: 20px;
+      background-color: white;
+      
+      
+    }
+
+    .Header {
+      background: whitesmoke;
+      padding: 30px;
+      border-radius: 10px;
+      /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); */
+      width: 300px;
+      text-align: center;
+      gap: 10px;
+      
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    .tabs {
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    .tabs button {
+      flex: 1;
+      padding: 10px 0;
+      border: none;
+      /* cursor: pointer; */
+      font-weight: bold;
+      background: #eee;
+      
+    }
+
+    .tabs .active {
+      background: linear-gradient(to right, #AA076B, #f25774);
+      color: white;
+      border-radius: 5px 5px 0 0;
+    }
+
+    
+
+    .forgot {
+      text-align: left;
+      font-size: 0.9em;
+      margin-bottom: 15px;
+      color: #AA076B;
+      cursor: pointer;
+    }
+
+    .login {
+      width: 100%;
+      padding: 10px;
+      background: linear-gradient(to right, #AA076B, #f25774);
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    .signup {
+      font-size: 0.9em;
+    }
+
+    .signup a {
+      color: #AA076B;
+      text-decoration: none;
+    }
+    .container {
+        gap: 10px;
+        display: flex;
+    }
+  </style>
+</head>
+<body>
+ <div class="container">
+  <div class="Header">
+    <h2>Login Form</h2>
+    <div class="tabs">
+      <button class="active">Login</button>
+      <button>Signup</button>
+    </div>
+    <form>
+      <input type="email" placeholder="Email Address" style="width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid white;
+      background-color: white;">
+      <input type="password" placeholder="Password" style="width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid white;
+      background-color: white;" >
+      <div class="forgot">Forgot password?</div>
+      <button type="submit" class="login">Login</button>
+    </form>
+    <div class="signup">
+      Not a member? <a href="#">Signup now</a>
+    </div>
+  </div>
+  </div>
+
+</body>
+</html>

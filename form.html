@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      form {
+        display: block;
+        /* flex-direction: column; */
+        width: 200px;
+        height: 300px;
+        margin: 10px;
+        /* margin: 0 auto; */
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        color: #333;
+        margin-bottom: 10px;
+      }
+      /* h3 {
+            text-align: center;
+            color: #333;
+        } */
+    </style>
+  </head>
+  <body>
+    <h3>Login Form</h3>
+    <form action="#">
+      <input
+        type="text"
+        placeholder="Enter your name"
+        style="margin-bottom: 10px"
+      />
+
+      <div>
+        <label for="bio"></label>Biography
+        <textarea name="biography" id="bio"></textarea>
+      </div>
+
+      <input type="date" style="margin-bottom: 10px" />
+
+      <input type="file" style="margin-bottom: 10px" /><br />
+      <input
+        type="password"
+        placeholder="Enter your password"
+        style="margin-bottom: 10px"
+      /><br />
+
+      <div>
+        <input type="radio" name="gender" />Male
+        <input type="radio" name="gender" />Female
+        <input type="radio" name="gender" />Other
+      </div>
+
+      <input
+        type="checkbox"
+        name="subscribe"
+        style="margin-bottom: 10px"
+      />Subscribe to newsletter
+      <label for="subject" style="margin-bottom: 10px"
+        >Choose your subject</label>
+      <select name="subject" id="subject">
+        <option value="0" selected disabled>Select subject</option>
+        <option value="1">C++ Programming</option>
+        <option value="2">HTML</option>
+        <option value="3">CSS</option>
+        <option value="4">JavaScript</option>
+        <option value="5">Tailwind CSS</option>
+        <option value="6">UX/UI Designing</option>
+      </select>
+      <input type="button" value="Submit" style="display: block;" />
+    </form>
+  </body>
+</html>
